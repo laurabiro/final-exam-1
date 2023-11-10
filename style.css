@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    font-family: Arial;
 }
 
 html {
@@ -32,49 +33,92 @@ img, picture, svg, video {
 }
 /* --- Variables --- */
 
-
 .container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
 }
 
-.sidebar {
-    display: flex;
-    min-height: 100vh;
-}
-
-.stripes {
-    background-color: aqua;
-    height: 50em;
-}
-.stripes p {
-    padding: 1em;
-    writing-mode: vertical-rl;
-    text-align: center;
-}
-.stripes:first-child {
-    background-color: blueviolet;
-}
-
-.title {
-    font-size: 4em;
-    padding: 1em;
-}
-.main-pic {
-    width: 100%;
-}
-
-.slide-cont {
+.nav {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1em;
+
 }
 
-.cards {
+.nav-box {
+    background-color: #e8e5e480;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.nav-box button {
+    background-color: white;
+    border-radius: 1.5em;
+    padding: .5em 2em;
+    border: none;
+
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2em;
+    width: 100%;
+    padding: 4em;
+
+}
+
+.pics {
+  min-width: 33%;
+}
+.pics img {
+    border-radius: 1em;
+}
+
+.middle {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    padding: 2em;
+    align-items: center;
+    padding: 3em;
+    gap: 1em
+}
+.middle h1 {
+    text-align: center;
+    font-size: 4em;
 }
 
-.cards div {
-    padding-bottom: 1em;
+.butts-cont {
+    display: flex;
+    justify-content: center;
+    gap:1em;
 }
+
+.butts {
+    background-color:#e8e5e480;
+    border-radius: 1.5em;
+    padding: .5em 1em;
+    border: none;
+}
+
+#contact {
+    text-align: center;
+    font-size: 2em;
+}
+#contact :nth-child(2) {
+    color: #7f7f7f
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.footer-part {
+    display: flex;
+    gap:1em;
+}
+
